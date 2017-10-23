@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mokletbank.FXMLDocumentController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="458.0" prefWidth="494.0" style="-fx-background-color: blue;">
+         <children>
+            <JFXTextField fx:id="hasil" layoutX="137.0" layoutY="190.0" maxWidth="234.0" minWidth="149.0" prefHeight="50.0" prefWidth="234.0" style="-fx-background-color: yellow;" unFocusColor="BLACK" />
+            <Label layoutX="194.0" layoutY="151.0" prefHeight="35.0" prefWidth="123.0" text="Masukkan pin Anda" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="122.0" prefHeight="35.0" prefWidth="325.0" text="Selamat Datang di Moklet Bank" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="138.0" layoutY="157.0" prefHeight="4.0" prefWidth="234.0" style="-fx-background-color: black;" />
+            <Label layoutX="418.0" layoutY="432.0" prefHeight="25.0" prefWidth="69.0" text="Step One" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane layoutX="106.0" layoutY="254.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="button1" onAction="#tekan1" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: silver;" text="1" />
+            <JFXButton fx:id="button3" onAction="#tekan3" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: silver;" text="3" GridPane.columnIndex="2" />
+            <JFXButton fx:id="button5" onAction="#tekan5" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: silver;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button2" onAction="#tekan2" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: silver;" text="2" GridPane.columnIndex="1" />
+            <JFXButton fx:id="button4" onAction="#tekan4" prefHeight="23.0" prefWidth="89.0" style="-fx-background-color: silver;" text="4" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button6" onAction="#tekan6" prefHeight="22.0" prefWidth="92.0" style="-fx-background-color: silver;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button7" onAction="#tekan7" prefHeight="24.0" prefWidth="89.0" style="-fx-background-color: silver;" text="7" GridPane.rowIndex="2" />
+            <JFXButton fx:id="buttonC" onAction="#tekanC" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: red;" text="C" GridPane.rowIndex="3" />
+            <JFXButton fx:id="button8" onAction="#tekan8" prefHeight="21.0" prefWidth="89.0" style="-fx-background-color: silver;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="button0" onAction="#tekan0" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: silver;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXButton fx:id="button9" onAction="#tekan9" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: silver;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="buttonOK" onAction="#tekanOK" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: red;" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
